@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+	<title>Vlad Dumitru - Resume</title>
+	<meta charset="utf-8">
+	
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+	<script type="text/javascript">
+	function togglePrint() {
+		var container = document.getElementById('container');
+		container.setAttribute('style', 'width: 100%; font-size: 12px;');
+		var printVersionLink = document.getElementById('print-version-link');
+		printVersionLink.setAttribute('style', 'visibility: hidden;');
+
+		var elem = document.getElementsByTagName('a');
+		for (var i = 0; i < elem.length; i++) {
+			elem[i].innerHTML = '<small>' + elem[i].getAttribute('href') + '</small>';
+		}
+
+		var printbutton = document.getElementById('print-version-link');
+		printbutton.style.visibility = "hidden";
+
+		var bottomhr = document.getElementById('bottom-hr');
+		bottomhr.style.visibility = "hidden";
+	}
+	</script>
+
+	<style type="text/css">
+	@media screen {
+		#container {
+			width: 66%;
+			margin-top: 2%;
+			margin-left: auto;
+			margin-right: auto;
+			font-family: "Open Sans", sans-serif;
+			font-weight: 400;
+			font-size: 14px;
+		}
+	}
+	@media print {
+		#container {
+			font-family: "Open Sans", sans-serif;
+			font-weight: 400;
+			font-size: 10px;
+		}
+	}
+	h1, h2 {
+		font-weight: 700;
+		display: inline-block;
+	}
+	@media screen {
+		h3 {
+			font-weight: 400;
+			margin-left: 5%;
+		}
+	}
+	@media print {
+		h3 {
+			font-weight: 400;
+			margin-left: 0%;
+			font-size: 12px;
+		}	
+	}
+	hr {
+		border: 1px solid #ccc;
+		margin-top: 1%;
+		margin-bottom: 1%;
+	}
+	a {
+		color: #248;
+	}
+	tr:nth-child(even) {
+		background-color: #f8f8f8;
+	}
+	tr:nth-child(odd) {
+		background-color: #ffffff;
+	}
+	@media screen {
+		.lhs-cell {
+			width: 25%;
+		}
+	}
+	@media print {
+		.lhs-cell {
+			width: 15%;
+			padding-right: 5%;
+		}
+	}
+	table {
+		border-collapse: collapse;
+	}
+	tr {
+		vertical-align: top;
+	}
+	td {
+		padding-top: .4em;
+		padding-bottom: .4em;
+	}
+	ul {
+		/*list-style-type: circle;*/
+		padding-left: 20px;
+	}
+	@media screen {
+		.upper-rhs-cell {
+			text-align: right;
+		}
+	}
+	@media print {
+		.upper-rhs-cell {
+			text-align: right;
+			font-size: 10px;
+		}
+	}
+	@media print {
+		h4 {
+			padding: 0px auto;
+			margin: 0px auto;
+		}
+		ul {
+			padding: 0px auto;
+			margin: 0px auto;
+		}
+		.row {
+			border-collapse: collapse;
+			border-bottom: 1px solid #eee;
+			vertical-align: text-top;
+		}
+	}
+	</style>
+</head>
+
+<body>
+	<div id="container">
+		<table width="100%">
+			<tr>
+				<td>
+					<h1>Vlad Dumitru</h1>
+				</td>
+				<td class="upper-rhs-cell">
+					Valea Buzăului n. 6, Bl. G32, Sc. F, Ap. 52<br>
+					<a href="mailto:dalv.urtimud@gmail.com">dalv.urtimud@gmail.com</a><br>
+					Tel. +40 0747 039 760<br>
+					<a href="http://github.com/deveah">GitHub profile</a>
+				</td>
+			</tr>
+		</table>
+		<hr>
+
+		<table width="100%">
+			<tr class="row">
+				<td class="lhs-cell">
+					<h3>Studies & Education</h3>
+				</td>
+
+				<td>
+					<ul>
+						<li><b>Oct 2013 - present</b> Polytechnic University of Bucharest -
+							Faculty of Electronic Engineering, Telecommunications and
+							Information Technology - <i>Computers and Information Technology</i>
+							branch<br>
+							<ul>
+								<li>Computer Programming (C)</li>
+								<li>Data Structures and Algorithms</li>
+								<li>Internet Services (HTML, Javascript, CSS)</li>
+								<li>Object Oriented Programming (C++)</li>
+								<li>Integrated Digital Circuits (Verilog)</li>
+								<li>Microprocessor Architecture (x86 Assembler)</li>
+							</ul>
+							</small>
+							</li>
+						<li><b>Sep 2009 - Jun 2013</b> <i>Mihai Viteazul</i> National College,
+							Bucharest</li>
+					</ul>
+				</td>
+			</tr>
+
+			<tr class="row">
+				<td class="lhs-cell">
+					<h3>Work Experience</h3>
+				</td>
+
+				<td>
+					<ul>
+						<li><b>Mar 2015 - present</b> - <i>SC C-Gaz &amp; Energy Distributie SRL</i> -
+							Junior Developer - in charge with implementing an online system for tracking
+							energy distribution
+						</li>
+					</ul>
+				</td>
+			</tr>
+
+			<tr class="row">
+				<td class="lhs-cell">
+					<h3>Projects & Contests</h3>
+				</td>
+
+				<td>
+					<ul>
+						<li><b>2015</b> - <i>Evaluating the Optimal Patch Size for Feature Extraction in
+							Remote Sensing Image Processing - An Information Theory Perspective</i> -
+							participated in the <i>Students' Communications Sessions</i> 2015</li>
+						<li><b>2015</b> - <i>lab1rint</i>, a mobile-friendly HTML5 puzzle game - participated
+							in the <i>MobilPRO</i> 2015 Contest (<a href="http://github.com/deveah/lab1rint">GitHub</a>)</li>
+						<li><b>2014</b> - <i>Autostep</i>, a procedural dubstep generator, which includes
+							both pattern and instrument generation from scratch - participated in the
+							<i>Students' Communications Sessions</i> 2014
+							(<a href="http://github.com/deveah/jeg">GitHub</a>)</li>
+						<li><b>2014</b> - <i>Hârtie</i>, a minimal HTML presentation framework
+							(<a href="http://github.com/deveah/hartie">GitHub</a>)</li>
+						<li><b>2013</b> - <i>Darabana</i>, a software percussion synthesizer which models
+							the old '80s style drum pads - participated in the <i>InfoEducatie</i> National
+							Contest 2013 (<a href="http://github.com/deveah/darabana">GitHub</a>)</li>
+						<li><b>2012</b> - <i>Taraf</i>, a Lua-scriptable backing track generator -
+							participated in the <i>InfoEducatie</i> National Contest 2012
+							(<a href="https://github.com/deveah/taraf">GitHub</a>)</li>
+						<li><b>2011</b> - <i>Lăutar</i>, a text-based guitar tabulature editor and player -
+							participated in the <i>InfoEducatie</i> National Contest 2011</li>
+						<li><b>2010</b> - <i>Aer</i>, a minimalistic stack-oriented programming language,
+							and its self-hosting compiler - participated in <i>InfoEducatie</i> National
+							Contest 2010</li>
+					</ul>
+				</td>
+			</tr>
+
+			<tr class="row">
+				<td class="lhs-cell">
+					<h3>Languages & Technologies</h3>
+				</td>
+
+				<td>
+					<h4>Programming languages</h4>
+					<ul>
+						<li>Proficient in: C, Lua, Javascript, HTML, CSS, FORTH, Python</li>
+						<li>Experienced in: PHP, C++, Java, (My)SQL, x86 Assembler</li>
+						<li>Beginner in: Verilog, Haskell</li>
+					</ul>
+
+					<h4>Technologies</h4>
+					<ul>
+						<li>General UNIX/Linux knowledge, Git, Make</li>
+						<li>Apache, MySQL, Node.js, MongoDB</li>
+					</ul>
+
+					<h4>Operating Systems</h4>
+					<ul>
+						<li>Proficient user of <i>Arch Linux</i> (5+ years experience) and other
+							mainstream GNU/Linux distributions</li>
+						<li>Proficient user of <i>Microsoft Windows</i> versions XP and above</li>
+					</ul>
+				</td>
+			</tr>
+
+			<tr class="row">
+				<td class="lhs-cell">
+					<h3>Other qualifications</h3>
+				</td>
+
+				<td>
+					<ul>
+						<li>Cisco <i>IT Essentials</i>: PC Hardware and Software</li>
+						<li>Cisco <i>CCNA Exploration</i>: Network Fundamentals</li>
+						<li>ECDL <i>Core Ceritificate</i></li>
+						<li><i>Cambridge English: Advanced</i> (CAE) - Grade A -
+							Equivalent to Proficiency in English</li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+
+		<hr id="bottom-hr">
+
+		<small><a id="print-version-link" href="javascript:togglePrint();">Print version</a></small>
+	</div>
+</body>
+</html>
